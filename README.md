@@ -5,6 +5,8 @@ for korean nlp with HuggingFace, Konlpy, Jupyter lab
 
 **구성 [Pytorch, HuggingFace, Konlpy(Mecab), Jupyter Lab]**
 
+**BASE는 pytorch/pytorch 입니다.**
+
 한글 NLP 개발하면서 제가 자주 쓰는 GPU 환경 셋팅입니다.
 
 ## Docker pull
