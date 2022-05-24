@@ -7,7 +7,7 @@ for korean nlp with HuggingFace, Konlpy, Jupyter lab
 
 # goofys
 **For moutn S3**
-
+**[Pytorch, HuggingFace, Konlpy(Mecab), Jupyter Lab, goofys]**
 
 ## Docker pull
 
