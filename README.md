@@ -22,6 +22,12 @@ OS는 pytorch의 CUDA 버전
 docker pull dev7halo/ko-nlp
 ```
 
+or
+
+```
+docker pull dev7halo/ko-nlp:goofys
+```
+
 ## Docker Run
 
 ### Latest
