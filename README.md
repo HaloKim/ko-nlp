@@ -2,9 +2,9 @@
 
 한글 NLP 할때 환경설정 귀찮아서 만든 Dockerfile
 
-OS는 pytorch의 CUDA 버전
-
 **특히 Mecab...**
+
+OS는 pytorch의 CUDA 버전
 
 # Latest
 
