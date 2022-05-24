@@ -1,9 +1,9 @@
-FROM pytorch/pytorch
+FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
 
 RUN apt-get update
 RUN apt-get install -y g++ openjdk-8-jdk python3-dev 
 RUN apt install -y zip unzip git git-lfs wget curl make
-RUN pip install jupyterlab matplotlib transformers pandas sklearn konlpy
+RUN pip install jupyterlab matplotlib transformers pandas sklearn konlpy kiwipiepy
 ENV JAVA_HOME="/usr/lib/jvm/java-1.8-openjdk"
 
 # Mecab
@@ -33,6 +33,7 @@ RUN curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab
 # RUN pip install kaggle
 
 # Install Jupyter
+RUN mkdir -p /root/.jupyter/NLP
 WORKDIR /root/.jupyter
 RUN jupyter notebook --generate-config
 
@@ -42,3 +43,6 @@ RUN echo "c.NotebookApp.ip = '0.0.0.0'" >> /root/.jupyter/jupyter_notebook_confi
 RUN echo "c.NotebookApp.notebook_dir = '/home/workspace'" >> /root/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.allow_root = True" >> /root/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.open_browser = False" >> /root/.jupyter/jupyter_notebook_config.py
+
+# sudo docker run -it -p 8888:8888 --name nlp --gpus all -v /home/halo/NLP:/root/.jupyter/NLP IMAGE_ID
+
