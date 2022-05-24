@@ -1,5 +1,8 @@
 # ko-nlp-docker
-for korean nlp with HuggingFace, Konlpy, Jupyter lab
+
+한글 NLP 할때 환경설정 귀찮아서 만든 Docker 파일
+
+**특히 Mecab...**
 
 # Latest
 
