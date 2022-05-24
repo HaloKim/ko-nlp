@@ -10,6 +10,7 @@ OS는 pytorch의 CUDA 버전
 
 **[Pytorch, HuggingFace, Konlpy(Mecab), Jupyter Lab]**
 
+
 # goofys
 **For moutn S3**
 
